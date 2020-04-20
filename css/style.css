@@ -1,0 +1,300 @@
+/* Start Media Query */
+
+/* Mobile And Tablets */
+@media (max-width: 767px)
+{
+    /* Start NavBar*/
+    .navbar-brand
+    {
+        margin-left: 70px;    
+    }
+    .logo 
+    {
+        left: 13px;
+    }
+    .navbar-nav
+    {
+        margin-left: 57px;
+        margin-right: 194px;
+    }
+    .dropdown-menu > li > a
+    {
+        padding: 8px 25px;
+        font-weight: bold;
+        font-size: large;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus 
+    {
+        background-color: #ec6565;
+        color: white;
+        padding: 10px 15px;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider
+    {
+        background-color: #dac1c1;
+    }
+    .nav > li
+    {
+        margin-right: -58px;
+    }
+    .nav > li
+    {
+        margin-bottom: 20px;
+    }
+    
+    /* End NavBar*/
+    /* Start Carousel */
+    .caro-life .carousel-inner ,
+    .caro-life .carousel .carousel-inner .item img
+    {
+        height: 536px;
+    }
+    /* End Carousel */
+    /* Start thumbnails  
+    .un-ramadan 
+    {
+        position: fixed;
+        width: 42px;
+        top: 2px;
+        right: 76px;
+    }
+     End thumbnails  */
+    /* Start section 1*/
+    /* End Section 1*/
+    
+    /* Start section 1*/
+    .section1, section .back
+    {
+        height: 1750px;
+    }
+    .section1 .back .container .row div > div
+    {
+        margin-top: 34px;
+        width: 262px;
+        margin-left: 206px;
+    }
+    /* End Section 1*/
+    /* start Section 2*/
+    .section2
+    {
+        height: 520px;
+    }
+    /* End Section 2*/
+    /* start charcter*/
+    .charcter .char, .charcter .charname
+    {
+        width: 432px;
+        font-size: 27px;
+        line-height: 1.9em;
+    }
+    .charcter .charname
+    {
+        line-height: 64px;
+    }
+    .charcter .carousel-inner, .charcter 
+    {
+        height: 413px;
+    }
+    .charcter .carousel-indicators li ,
+    .charcter .carousel-indicators li.active
+    {
+        width: 68px;
+        height: 68px;
+    }
+    /* End charcter*/
+    
+    /* Start feature */
+    .feature img
+    {
+        margin: 30px auto;
+    }
+    /* End feature */
+    /* Start Section3 */
+    .section3 img
+    {
+        height: 410px;
+    }
+    /* End Section3*/
+    
+    /*Start section achievenents*/
+    .achieve .head
+    {
+         line-height: 1.5em;
+    }
+    /*End section achievenents*/
+    /* Start Section Projects */
+    .projects .lead 
+    {
+        font-size: 23px;
+        width: 228px;
+        color: #23537b;
+        font-weight: bold;
+        font-family: serif;
+        margin: 24px auto;
+        margin-top: -18px;
+    }
+
+    .projects .main img 
+    {
+        width: 100%;
+    }
+    .projects .main 
+    {
+        background-color: aliceblue;
+        padding: 4px;
+        margin: 10px 0px;
+        direction: rtl;
+        position: relative;
+        height: 100%;
+    }
+    /* End Section Projects */
+}
+/* from small to medium */
+@media (min-width: 768px) and (max-width: 991px)
+{
+    /* Start NavBar */
+    .navbar-nav 
+    {
+        margin-left: 16px;
+        margin-right: -115px;
+    }
+    .up
+    {
+        margin-right: 6px;
+    }
+    .nav > li.call
+    {
+        margin-right: 60px;
+    }
+    /* End NavBar*/
+    /* Start Carousel */
+    .caro-life .carousel-inner ,
+    .caro-life .carousel .carousel-inner .item img
+    {
+        height: 536px;
+    }
+    /* End Carousel */
+    /* Start section 1*/
+    .section1, section .back
+    {
+        height: 878px;
+    }
+    .section1 .back .container .row div > div
+    {
+        margin-top: 31px;
+        width: 267px;
+        margin-left: 67px;
+    }
+    /* End Section 1*/
+    /* start charcter*/
+    .charcter .char, 
+    .charcter .charname 
+    {
+        width: 762px;
+    }
+    /* End charcter*/
+    /* Start Section3 */
+    .section3 img
+    {
+        height: 500px;
+    }
+    /* End Section3*/
+    /* Start Section Projects */
+    .projects .lead 
+    {
+        font-size: 23px;
+        width: 143px;
+        color: #23537b;
+        font-weight: bold;
+        font-family: serif;
+        margin-right: 6px;
+        padding-top: 84px;
+    }
+    /* End Section Projects */
+}
+
+/* from medium screen */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    /* Start NavBar*/
+    .container-fluid
+    {
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+   .navbar-nav
+    {
+        margin-right: -220px;
+    }
+    .nav > li.call
+    {
+        margin-right: 53px;
+    }
+    /* End NavBar*/
+    /* Start Carousel */
+    .caro-life .carousel-inner ,
+    .caro-life .carousel .carousel-inner .item img
+    {
+        height: 536px;
+    }
+    /* End Carousel */
+    /* Start section 1*/
+    .section1, section .back
+    {
+        height: 878px;
+    }
+    .section1 .back .container .row div > div 
+    {
+        width: 271px;
+        margin-left: 98px;
+        margin-top: 28px;
+    }
+    /* End Section 1*/
+    /* Start Section Projects */
+    .projects .lead 
+    {
+        font-size: 29px;
+        width: 189px;
+        color: #23537b;
+        font-weight: bold;
+        padding-top: 42px;
+        font-family: serif;
+        margin-right: 11px;
+    }
+    /* End Section Projects */
+}
+/* from Large screen */
+@media (min-width: 1200px)
+{
+    /* Start NavBar*/
+    .container-fluid
+    {
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+    .nav > li.call
+    {
+        margin-right: 240px;
+    }
+    .navbar-nav
+    {
+        margin-right: -183px;
+    }
+    .navbar-right .dropdown-menu 
+    {
+        right: auto;
+        left: 0;
+    }
+    /* End NavBar*/
+    
+}
+/*Special case*/
+@media (max-width: 595px)
+{
+    .section1 .back .container .row div > div
+    {
+        margin-left: 105px;
+    }
+}
+}
