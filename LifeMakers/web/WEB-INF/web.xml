@@ -1,11 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AddVolunteer</servlet-name>
+        <servlet-class>Servlets.AddVolunteer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteVolunteerId</servlet-name>
+        <servlet-class>Servlets.DeleteVolunteerId</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetAllVolunteers</servlet-name>
+        <servlet-class>Servlets.GetAllVolunteers</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteVolunteerName</servlet-name>
+        <servlet-class>Servlets.DeleteVolunteerName</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpDateVolunteerId</servlet-name>
+        <servlet-class>Servlets.UpDateVolunteerId</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetVolunteerId</servlet-name>
+        <servlet-class>Servlets.GetVolunteerId</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetVolunteerName</servlet-name>
+        <servlet-class>Servlets.GetVolunteerName</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddVolunteer</servlet-name>
+        <url-pattern>/AddVolunteer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteVolunteerId</servlet-name>
+        <url-pattern>/DeleteVolunteerId</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetAllVolunteers</servlet-name>
+        <url-pattern>/GetAllVolunteers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteVolunteerName</servlet-name>
+        <url-pattern>/DeleteVolunteerName</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpDateVolunteerId</servlet-name>
+        <url-pattern>/UpDateVolunteerId</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetVolunteerId</servlet-name>
+        <url-pattern>/GetVolunteerId</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetVolunteerName</servlet-name>
+        <url-pattern>/GetVolunteerName</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <!--
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+    -->
 </web-app>

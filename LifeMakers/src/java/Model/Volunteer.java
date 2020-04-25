@@ -37,7 +37,8 @@ public class Volunteer {
         
     }
     
-    public Volunteer(String fname, String lname, int age, String phone, String city, Gender gender, String message) {
+    public Volunteer(int id,String fname, String lname, int age, String phone, String city, Gender gender, String message) {
+        this.id = id;
         this.fname = fname;
         this.lname = lname;
         this.age = age;

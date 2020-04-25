@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Controller;
 
 import DatabaseFiles.ServicesImplementation.VolunteerService;
@@ -15,23 +10,34 @@ import org.hibernate.Session;
  * @author Eng Eslam khder
  */
 public class VolunteerController {
+
     private VolunteerService volunteerservice;
-    public VolunteerController (){
+
+    public VolunteerController() {
         volunteerservice = new VolunteerService();
     }
-    public int addVolunteer(Volunteer volunteer, Session session) {
-        return volunteerservice.addVolunteer(volunteer, session);
+
+    public int addVolunteer(Volunteer volunteer) {
+        return volunteerservice.addVolunteer(volunteer);
     }
-    public Volunteer getVolunteer(int id, Session session) {
-        return volunteerservice.getVolunteer(id, session);
+
+    public Volunteer getVolunteerId(int id) {
+        return volunteerservice.getVolunteerId(id);
     }
-    public int updateVolunteer(Volunteer player, Session session){
-        return volunteerservice.updateVolunteer(player, session);
+
+    public List getVolunteersName(String fname, String lname) {
+        return volunteerservice.getVolunteersName(fname, lname);
     }
-    public int deleteVolunteer(Volunteer volunteer, Session session) {
-        return volunteerservice.deleteVolunteer(volunteer, session);
+
+    public int updateVolunteer(Volunteer player) {
+        return volunteerservice.updateVolunteer(player);
     }
-    public List<Volunteer> getAllVolunteer(Session session) {
-        return volunteerservice.getAllVolunteer(session);
+
+    public int deleteVolunteer(Volunteer volunteer) {
+        return volunteerservice.deleteVolunteer(volunteer);
+    }
+
+    public List<Volunteer> getAllVolunteer() {
+        return volunteerservice.getAllVolunteer();
     }
 }
