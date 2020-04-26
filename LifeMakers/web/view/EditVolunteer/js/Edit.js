@@ -8,9 +8,9 @@ function Edit()
     age = document.getElementById("age").value;
     phone = document.getElementById("phone").value;
     city = document.getElementById("city").value;
-    gender = document.getElementById("gender");
+    gender = document.getElementById("gender").value;
     message = document.getElementById("message").value;
-    var url = "../../UpDateVolunteerId";
+    var url = "../../UpDateVolunteer";
     if (window.XMLHttpRequest) {
         request = new XMLHttpRequest();
     } else if (window.ActiveXObject) {

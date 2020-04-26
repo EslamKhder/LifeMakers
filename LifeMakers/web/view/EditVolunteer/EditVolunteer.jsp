@@ -31,7 +31,7 @@
         <!--===============================================================================================-->
     </head>
     <jsp:scriptlet>
-        Volunteer vol = (Volunteer) request.getServletContext().getAttribute("Volunteer");
+        Volunteer vol = (Volunteer) application.getAttribute("Volunteer");
     </jsp:scriptlet>
     <body>
 
@@ -42,6 +42,7 @@
                         <span class="contact2-form-title">
                             Edit Volunteer
                         </span>
+                        
                         <div class="wrap-input2 validate-input" data-validate="required">
                             ID : <input class="input2" type="text" id="id" placeholder="First Name" disabled value="<%=vol.getId()%>">
                         </div>

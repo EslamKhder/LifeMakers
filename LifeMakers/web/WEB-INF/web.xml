@@ -17,8 +17,8 @@
         <servlet-class>Servlets.DeleteVolunteerName</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>UpDateVolunteerId</servlet-name>
-        <servlet-class>Servlets.UpDateVolunteerId</servlet-class>
+        <servlet-name>UpDateVolunteer</servlet-name>
+        <servlet-class>Servlets.UpDateVolunteer</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>GetVolunteerId</servlet-name>
@@ -45,8 +45,8 @@
         <url-pattern>/DeleteVolunteerName</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>UpDateVolunteerId</servlet-name>
-        <url-pattern>/UpDateVolunteerId</url-pattern>
+        <servlet-name>UpDateVolunteer</servlet-name>
+        <url-pattern>/UpDateVolunteer</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>GetVolunteerId</servlet-name>
