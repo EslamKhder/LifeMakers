@@ -7,17 +7,17 @@ package DatabaseFiles.ServicesInterface;
 
 import Model.Volunteer;
 import java.util.List;
-import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 /**
  *
  * @author Eng Eslam khder
  */
 public interface VolunteerServices {
-    public int addVolunteer(Volunteer volunteer);
-    public Volunteer getVolunteerId(int id);
-    public List getVolunteersName(String fname,String lname);
-    public int updateVolunteer(Volunteer volunteer);
-    public int deleteVolunteer(Volunteer volunteer);
-    public List<Volunteer> getAllVolunteer();
+    public int addVolunteer(Volunteer volunteer,SessionFactory session);
+    public Volunteer getVolunteerId(int id,SessionFactory session);
+    public List getVolunteersName(String fname,String lname,SessionFactory session);
+    public int updateVolunteer(Volunteer volunteer,SessionFactory session);
+    public int deleteVolunteer(Volunteer volunteer,SessionFactory session);
+    public List<Volunteer> getAllVolunteer(SessionFactory session);
 }

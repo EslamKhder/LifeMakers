@@ -14,6 +14,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 /**
  *
@@ -31,8 +33,9 @@ public class GetVolunteerName extends HttpServlet {
         } else if (lname.isEmpty()) {
             response.getWriter().print("lname");
         } else {
+            SessionFactory session = (SessionFactory) request.getServletContext().getAttribute("Connect");
             VolunteerController vc1 = new VolunteerController();
-            List<Volunteer> vol = vc1.getVolunteersName(fname, lname);
+            List<Volunteer> vol = vc1.getVolunteersName(fname, lname,session);
             if (vol == null) {
                 response.getWriter().print("notexist");
             } else {

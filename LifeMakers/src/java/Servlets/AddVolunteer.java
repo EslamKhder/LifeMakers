@@ -9,6 +9,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 /**
  *
@@ -50,7 +53,8 @@ public class AddVolunteer extends HttpServlet {
             }
             Volunteer volunteer = new Volunteer(isNumber(id), fname, lname, isNumber(age), phone, city, gen, message);
             VolunteerController vc = new VolunteerController();
-            if (vc.addVolunteer(volunteer) == 1) {
+            SessionFactory session = (SessionFactory) request.getServletContext().getAttribute("Connect");
+            if (vc.addVolunteer(volunteer,session) == 1) {
                 response.getWriter().print("success");
             } else {
                 response.getWriter().print("idExist");

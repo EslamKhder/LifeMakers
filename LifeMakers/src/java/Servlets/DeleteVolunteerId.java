@@ -7,6 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 /**
  *
@@ -24,11 +26,12 @@ public class DeleteVolunteerId extends HttpServlet {
         if (id.isEmpty() || isNumber(id) == -1) {
             response.getWriter().print("id");
         } else {
-            volunteer = vc1.getVolunteerId(isNumber(id));
+            SessionFactory session = (SessionFactory) request.getServletContext().getAttribute("Connect");
+            volunteer = vc1.getVolunteerId(isNumber(id),session);
             if (volunteer == null) {
                 response.getWriter().print("notexist");
             } else {
-                vc2.deleteVolunteer(volunteer);
+                vc2.deleteVolunteer(volunteer,session);
                 response.getWriter().print("success");
             }
         }

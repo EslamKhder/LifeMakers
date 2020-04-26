@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.swing.JOptionPane;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 /**
  *
@@ -53,7 +55,8 @@ public class UpDateVolunteer extends HttpServlet {
         } else {
             Volunteer volunteer = new Volunteer(isNumber(id), fname, lname, isNumber(age), phone, city, gen, message);
             VolunteerController vc = new VolunteerController();
-            vc.updateVolunteer(volunteer);
+            SessionFactory session = (SessionFactory) request.getServletContext().getAttribute("Connect");
+            vc.updateVolunteer(volunteer,session);
             request.getServletContext().removeAttribute("Volunteer");
             response.getWriter().print("success");
         }

@@ -5,6 +5,7 @@ import Model.Gender;
 import Model.Volunteer;
 import javax.swing.JOptionPane;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 /**
  *
@@ -16,8 +17,7 @@ public class NewMain {
         // TODO code application logic here
         Volunteer volunteer = new Volunteer();volunteer.setFname("eslam");
         VolunteerController vv = new VolunteerController();
-        
-        JOptionPane.showMessageDialog(null, vv.getVolunteersName("sddsa", "asdsa") + "");
+        SessionFactory session = HibernateUtil.getSessionFactory();
 //        Session session = HibernateUtil.getSessionFactory().openSession();
 //        session.beginTransaction();
 //        session.delete(volunteer);
